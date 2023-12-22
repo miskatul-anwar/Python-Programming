@@ -1,0 +1,5 @@
+print("Your age?")
+age = input()
+print("Calculate how many years?")
+years = input()
+print("You will be "+ str(int(age)+int(years)) +" after"+years+" years." )
