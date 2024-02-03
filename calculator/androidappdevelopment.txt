@@ -1,0 +1,9 @@
+==> this is a simple way to create an app for android devices 
+
+--> install python 
+--> install pip
+--> pip install kivy 
+--> write a python code 
+--> pip install buildozer
+--> pip install cython 
+--> buildozer android debug

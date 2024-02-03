@@ -5,3 +5,4 @@ while True:
         break
     else:
         continue
+#==> This is the simplest way to understand loops
