@@ -1,0 +1,10 @@
+str = "I'm a coder"
+print(str[-5:-2])
+print(str.endswith("r"))
+print(str.capitalize())
+print(str.count("a"))
+print(str.find("c"))
+print(str.lower())
+print(str.upper())
+print(str.replace("I'm a", "We're"))
+print(len(str))
