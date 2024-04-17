@@ -9,5 +9,7 @@ plt.title(
 )
 plt.xlabel("X Axis")
 plt.ylabel("Y Axis")
+plt.xticks([1, 2, 3, 4])
+plt.yticks([1, 2, 3, 4])
 plt.plot(x, y)
 plt.show()
