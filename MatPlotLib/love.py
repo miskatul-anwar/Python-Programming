@@ -9,6 +9,9 @@ y = 13 * np.cos(t) - 5 * np.cos(2 * t) - 2 * np.cos(3 * t) - np.cos(4 * t)
 # Plot the filled heart shape
 plt.fill(x, y, "red")
 
+# Resize the graph
+# plt.figure(figsize=(5, 5), dpi=300)
+
 # Customize plot appearance
 plt.title(
     "You have such a genuine warmth that brightens everyone's day.\n Your kindness is like a ray of sunshine,\n Always spreading positivity wherever you go.",
