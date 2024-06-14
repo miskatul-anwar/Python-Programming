@@ -19,7 +19,7 @@ plt.title(
         "fontsize": "12",
         "fontweight": "bold",
         "fontstyle": "italic",
-        "fontname": "Times New Roman",
+        "fontname": "Maple Mono",
     },
     loc="center",
 )
