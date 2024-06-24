@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Noob Python!.md",
-                "mode": "preview",
+                "file": "MLUR.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "9e1840db3243281d",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Noob Python!.md",
+                "file": "MLUR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Noob Python!.md",
+                "file": "MLUR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Noob Python!.md"
+                "file": "MLUR.md"
               }
             }
           }
@@ -146,10 +147,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d479b3d725a0f0a9",
+  "active": "a5628cddbc6aaf5e",
   "lastOpenFiles": [
+    "Pasted image 20240624130711.png",
+    "Pasted image 20240624130607.png",
+    "Pasted image 20240624130307.png",
+    "Pasted image 20240624125930.png",
+    "Pasted image 20240624125807.png",
+    "Pasted image 20240624125649.png",
+    "Pasted image 20240624125456.png",
+    "Pasted image 20240624124346.png",
+    "Pasted image 20240624124301.png",
+    "Pasted image 20240624124140.png",
+    "Pasted image 20240624124053.png",
     "GNU not Unix !.md",
-    "Noob Python!.md",
+    "MLUR.md",
     "MatPlotLib/3DPlots/basic_plotting.py~",
     "MatPlotLib/3DPlots/surfacePlot.py~",
     "MatPlotLib/3DPlots/sin.py~",
