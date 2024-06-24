@@ -14,7 +14,25 @@
               "type": "markdown",
               "state": {
                 "file": "MLUR.md",
-                "mode": "source",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "6b19254b5d6b275d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b2790063420f9a79",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MLUR.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -149,17 +167,17 @@
   },
   "active": "a5628cddbc6aaf5e",
   "lastOpenFiles": [
+    "Pasted image 20240624195628.png",
+    "Pasted image 20240624181516.png",
+    "Pasted image 20240624181422.png",
+    "Pasted image 20240624181147.png",
+    "Pasted image 20240624175824.png",
+    "Pasted image 20240624175721.png",
+    "Pasted image 20240624165419.png",
     "Pasted image 20240624130711.png",
     "Pasted image 20240624130607.png",
     "Pasted image 20240624130307.png",
     "Pasted image 20240624125930.png",
-    "Pasted image 20240624125807.png",
-    "Pasted image 20240624125649.png",
-    "Pasted image 20240624125456.png",
-    "Pasted image 20240624124346.png",
-    "Pasted image 20240624124301.png",
-    "Pasted image 20240624124140.png",
-    "Pasted image 20240624124053.png",
     "GNU not Unix !.md",
     "MLUR.md",
     "MatPlotLib/3DPlots/basic_plotting.py~",
