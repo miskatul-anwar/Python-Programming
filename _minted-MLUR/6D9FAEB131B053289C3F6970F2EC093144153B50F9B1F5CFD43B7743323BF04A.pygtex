@@ -1,0 +1,37 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{// Parent class (Vehicle)}
+\PYG{k+kd}{class} \PYG{n+nc}{Vehicle}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{start}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Starting a vehicle\PYGZdq{}}\PYG{p}{);}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{// Child class (Car) that extends the parent class (Vehicle)}
+\PYG{k+kd}{class} \PYG{n+nc}{Car}\PYG{+w}{ }\PYG{k+kd}{extends}\PYG{+w}{ }\PYG{n}{Vehicle}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{accelerate}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Accelerating a car\PYGZdq{}}\PYG{p}{);}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{// Child class (Motorcycle) that extends the parent class (Vehicle)}
+\PYG{k+kd}{class} \PYG{n+nc}{Motorcycle}\PYG{+w}{ }\PYG{k+kd}{extends}\PYG{+w}{ }\PYG{n}{Vehicle}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{revEngine}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Revving a motorcycle engine\PYGZdq{}}\PYG{p}{);}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kd}{class} \PYG{n+nc}{InheritanceExample2}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kd}{static}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{main}\PYG{p}{(}\PYG{n}{String}\PYG{o}{[]}\PYG{+w}{ }\PYG{n}{args}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{c+c1}{// Create objects of the child classes}
+\PYG{+w}{        }\PYG{n}{Car}\PYG{+w}{ }\PYG{n}{car}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{new}\PYG{+w}{ }\PYG{n}{Car}\PYG{p}{();}
+\PYG{+w}{        }\PYG{n}{Motorcycle}\PYG{+w}{ }\PYG{n}{motorcycle}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{new}\PYG{+w}{ }\PYG{n}{Motorcycle}\PYG{p}{();}
+
+\PYG{+w}{        }\PYG{c+c1}{// Use polymorphism to call the start method on these objects}
+\PYG{+w}{        }\PYG{n}{Vehicle}\PYG{+w}{ }\PYG{n}{vehicle1}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{car}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{Vehicle}\PYG{+w}{ }\PYG{n}{vehicle2}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{motorcycle}\PYG{p}{;}
+
+\PYG{+w}{        }\PYG{n}{vehicle1}\PYG{p}{.}\PYG{n+na}{start}\PYG{p}{();}\PYG{+w}{  }\PYG{c+c1}{// Output: Starting a vehicle}
+\PYG{+w}{        }\PYG{n}{vehicle2}\PYG{p}{.}\PYG{n+na}{start}\PYG{p}{();}\PYG{+w}{  }\PYG{c+c1}{// Output: Starting a vehicle}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

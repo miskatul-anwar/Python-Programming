@@ -1,5 +1,11 @@
 {
   "showLineNumber": true,
   "vimMode": true,
-  "spellcheck": false
+  "spellcheck": false,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "2",
+    "downscalePercent": 100
+  }
 }

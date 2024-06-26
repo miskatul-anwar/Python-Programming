@@ -4,24 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "35507539d3f34ad4",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a5628cddbc6aaf5e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MLUR.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "6b19254b5d6b275d",
         "type": "tabs",
         "children": [
@@ -32,8 +14,18 @@
               "type": "markdown",
               "state": {
                 "file": "MLUR.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "44cf437556acf190",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.5"
               }
             }
           }
@@ -87,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "9e1840db3243281d",
@@ -165,8 +156,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a5628cddbc6aaf5e",
+  "active": "b2790063420f9a79",
   "lastOpenFiles": [
+    "MLUR.tex~",
+    "MLUR.out",
+    "MLUR.pdf",
+    "MLUR.aux",
+    "MLUR.log",
+    "MLUR.tex",
+    "Pasted image 20240625145948.png",
     "Pasted image 20240624195628.png",
     "Pasted image 20240624181516.png",
     "Pasted image 20240624181422.png",
@@ -176,8 +174,6 @@
     "Pasted image 20240624165419.png",
     "Pasted image 20240624130711.png",
     "Pasted image 20240624130607.png",
-    "Pasted image 20240624130307.png",
-    "Pasted image 20240624125930.png",
     "GNU not Unix !.md",
     "MLUR.md",
     "MatPlotLib/3DPlots/basic_plotting.py~",

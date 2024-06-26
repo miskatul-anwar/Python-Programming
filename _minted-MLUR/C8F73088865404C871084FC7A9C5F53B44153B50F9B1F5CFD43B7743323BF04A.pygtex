@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{java.util.Stack}\PYG{p}{;}
+
+\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kd}{class} \PYG{n+nc}{StackExample}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kd}{static}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{main}\PYG{p}{(}\PYG{n}{String}\PYG{o}{[]}\PYG{+w}{ }\PYG{n}{args}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{Stack}\PYG{o}{\PYGZlt{}}\PYG{n}{String}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{animals}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{new}\PYG{+w}{ }\PYG{n}{Stack}\PYG{o}{\PYGZlt{}\PYGZgt{}}\PYG{p}{();}
+\PYG{+w}{        }\PYG{n}{animals}\PYG{p}{.}\PYG{n+na}{push}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Lion\PYGZdq{}}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{animals}\PYG{p}{.}\PYG{n+na}{push}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Dog\PYGZdq{}}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{animals}\PYG{p}{.}\PYG{n+na}{push}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Cat\PYGZdq{}}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{animals}\PYG{p}{.}\PYG{n+na}{push}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Rat\PYGZdq{}}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{animals}\PYG{p}{.}\PYG{n+na}{push}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Bat\PYGZdq{}}\PYG{p}{);}
+
+\PYG{+w}{        }\PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{n}{animals}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{n}{animals}\PYG{p}{.}\PYG{n+na}{peek}\PYG{p}{());}\PYG{+w}{ }\PYG{c+c1}{// LIFO}
+
+\PYG{+w}{        }\PYG{n}{animals}\PYG{p}{.}\PYG{n+na}{pop}\PYG{p}{();}
+\PYG{+w}{        }\PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{n}{animals}\PYG{p}{.}\PYG{n+na}{toString}\PYG{p}{());}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

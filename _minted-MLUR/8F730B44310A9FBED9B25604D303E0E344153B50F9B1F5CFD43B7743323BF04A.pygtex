@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{java.util.PriorityQueue}\PYG{p}{;}
+
+\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kd}{class} \PYG{n+nc}{PriorityQueueExample}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kd}{static}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{main}\PYG{p}{(}\PYG{n}{String}\PYG{o}{[]}\PYG{+w}{ }\PYG{n}{args}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{PriorityQueue}\PYG{o}{\PYGZlt{}}\PYG{n}{Integer}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{pq}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{new}\PYG{+w}{ }\PYG{n}{PriorityQueue}\PYG{o}{\PYGZlt{}\PYGZgt{}}\PYG{p}{();}
+\PYG{+w}{        }\PYG{n}{pq}\PYG{p}{.}\PYG{n+na}{offer}\PYG{p}{(}\PYG{l+m+mi}{40}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{pq}\PYG{p}{.}\PYG{n+na}{offer}\PYG{p}{(}\PYG{l+m+mi}{30}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{pq}\PYG{p}{.}\PYG{n+na}{offer}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{pq}\PYG{p}{.}\PYG{n+na}{offer}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{);}
+
+\PYG{+w}{        }\PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{n}{pq}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{n}{pq}\PYG{p}{.}\PYG{n+na}{peek}\PYG{p}{());}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

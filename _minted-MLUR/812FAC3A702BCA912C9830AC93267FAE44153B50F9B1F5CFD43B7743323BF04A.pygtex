@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kd}{class} \PYG{n+nc}{copyPaste}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kd}{static}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{main}\PYG{p}{(}\PYG{n}{String}\PYG{o}{[]}\PYG{+w}{ }\PYG{n}{args}\PYG{p}{)}\PYG{+w}{ }\PYG{k+kd}{throws}\PYG{+w}{ }\PYG{n}{IOException}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{BufferedReader}\PYG{+w}{ }\PYG{n}{br}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{new}\PYG{+w}{ }\PYG{n}{BufferedReader}\PYG{p}{(}\PYG{k}{new}\PYG{+w}{ }\PYG{n}{FileReader}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}input.dat\PYGZdq{}}\PYG{p}{));}
+\PYG{+w}{        }\PYG{n}{String}\PYG{+w}{ }\PYG{n}{str}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{((}\PYG{n}{str}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{br}\PYG{p}{.}\PYG{n+na}{readLine}\PYG{p}{())}\PYG{+w}{ }\PYG{o}{!=}\PYG{+w}{ }\PYG{k+kc}{null}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{n}{str}\PYG{p}{);}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{n}{br}\PYG{p}{.}\PYG{n+na}{close}\PYG{p}{();}
+\PYG{+w}{        }\PYG{n}{BufferedWriter}\PYG{+w}{ }\PYG{n}{bw}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{new}\PYG{+w}{ }\PYG{n}{BufferedWriter}\PYG{p}{(}\PYG{k}{new}\PYG{+w}{ }\PYG{n}{FileWriter}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}output.dat\PYGZdq{}}\PYG{p}{));}
+\PYG{+w}{        }\PYG{n}{bw}\PYG{p}{.}\PYG{n+na}{append}\PYG{p}{(}\PYG{n}{str}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{bw}\PYG{p}{.}\PYG{n+na}{close}\PYG{p}{();}
+\PYG{+w}{        }\PYG{k}{return}\PYG{p}{;}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
