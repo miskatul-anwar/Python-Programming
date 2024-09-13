@@ -1,0 +1,60 @@
+\documentclass[14pt,aspectratio=169]{beamer}
+
+% Used packages
+\usepackage{amsthm}
+\usepackage{tikz,tcolorbox}
+\usepackage[object=vectorian]{pgfornament}
+\usepackage[active,tightpage]{preview}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+
+% Package options
+\PassOptionsToPackage{dvipsnames,svgnames}{xcolor}
+\usetikzlibrary{shapes.geometric,calc}
+\definecolor{fondpaille}{cmyk}{0,0,0.1,0}
+\definecolor{Maroon}{cmyk}{0,2,0.3,0}
+
+% Slide Tweaks
+\usetheme{Copenhagen}
+\usecolortheme{beaver}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+
+% Each slide corner
+\newcommand{\eachpageornament}{%
+\begin{tikzpicture}[remember picture, overlay,color=BrickRed]
+\node[anchor=north west] at (current page.north west){%
+\pgfornament[width=2cm]{63}};
+\node[anchor=north east] at (current page.north east){%
+\pgfornament[width=2cm,symmetry=v]{63}};
+\node[anchor=south west] at (current page.south west){%
+\pgfornament[width=2cm,symmetry=h]{63}};
+\node[anchor=south east] at (current page.south east){%
+\pgfornament[width=2cm,symmetry=c]{63}};
+\end{tikzpicture}
+}
+
+% Title and author 
+\title{Datavis Presentation}
+\author{Miskatul Anwar}
+\date{September 2024}
+
+\begin{document}
+\pagecolor{fondpaille}
+\color{Maroon}
+\setlength{\PreviewBorder}{1em}
+
+\begin{frame}
+    \begin{preview}
+        \input{ornament-logo}
+    \end{preview}
+\end{frame}
+
+\begin{frame}{Title Page}
+    \begin{itemize}
+        \item hi
+        \item hello
+    \end{itemize}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,157 @@
+\documentclass[14pt,aspectratio=169]{beamer}
+
+% Used packages
+\usepackage{amsthm}
+\usepackage{tikz,tcolorbox}
+\usepackage[object=vectorian]{pgfornament}
+\usepackage[active,tightpage]{preview}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage{pgfplots}  % For plotting graphs
+\usepackage{pgf-pie}   % For pie charts
+
+% Package options
+\PassOptionsToPackage{dvipsnames,svgnames}{xcolor}
+\usetikzlibrary{shapes.geometric,calc}
+\definecolor{fondpaille}{cmyk}{0,0,0.1,0}
+\definecolor{Maroon}{cmyk}{0,2,0.3,0}
+\definecolor{BrickRed}{rgb}{0.8, 0.25, 0.33}  % Define BrickRed color
+
+% Slide Tweaks
+\usetheme{Copenhagen}
+\usecolortheme{beaver}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+
+% Each slide corner ornament
+\newcommand{\eachpageornament}{%
+\begin{tikzpicture}[remember picture, overlay, color=BrickRed]
+\node[anchor=north west] at (current page.north west){%
+\pgfornament[width=2cm]{63}};
+\node[anchor=north east] at (current page.north east){%
+\pgfornament[width=2cm,symmetry=v]{63}};
+\node[anchor=south west] at (current page.south west){%
+\pgfornament[width=2cm,symmetry=h]{63}};
+\node[anchor=south east] at (current page.south east){%
+\pgfornament[width=2cm,symmetry=c]{63}};
+\end{tikzpicture}
+}
+
+% Title and author 
+\title{Data Visualization Presentation}
+\author{Miskatul Anwar}
+\date{September 2024}
+
+\begin{document}
+\pagecolor{fondpaille}
+\color{Maroon}
+\setlength{\PreviewBorder}{1em}
+
+% Title slide
+\begin{frame}
+    \titlepage
+    \eachpageornament
+\end{frame}
+
+% Importance of Data Visualization
+\begin{frame}{Importance of Data Visualization}
+    \eachpageornament
+    \begin{itemize}
+        \item Simplifies complex data.
+        \item Reveals patterns and trends.
+        \item Helps in decision making.
+    \end{itemize}
+\end{frame}
+
+% Bar Plot Slide
+\begin{frame}{Bar Plot}
+    \eachpageornament
+    \begin{itemize}
+        \item Shows categorical data with rectangular bars.
+        \item Useful for comparing quantities across categories.
+    \end{itemize}
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            ybar,
+            symbolic x coords={A, B, C, D},
+            xtick=data,
+            ylabel={Values},
+            xlabel={Categories},
+            nodes near coords,
+            width=0.7\textwidth,
+            height=0.5\textwidth
+        ]
+        \addplot coordinates {(A,10) (B,15) (C,7) (D,12)};
+        \end{axis}
+    \end{tikzpicture}
+\end{frame}
+
+% Pie Chart Slide
+\begin{frame}{Pie Chart}
+    \eachpageornament
+    \begin{itemize}
+        \item Represents data in a circular graph.
+        \item Useful for showing proportions.
+    \end{itemize}
+    \centering
+    \begin{tikzpicture}
+        \pie[radius=2, text=legend, color={red!40, blue!40, green!40, yellow!40}]
+        {20/A, 30/B, 25/C, 25/D}
+    \end{tikzpicture}
+\end{frame}
+
+% Line Plot Slide
+\begin{frame}{Line Plot}
+    \eachpageornament
+    \begin{itemize}
+        \item Represents data points connected by straight lines.
+        \item Ideal for showing trends over time.
+    \end{itemize}
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            xlabel={Time},
+            ylabel={Value},
+            width=0.7\textwidth,
+            height=0.5\textwidth
+        ]
+        \addplot coordinates {(1,10) (2,15) (3,9) (4,12)};
+        \end{axis}
+    \end{tikzpicture}
+\end{frame}
+
+% Heatmap Slide
+\begin{frame}{Heatmap}
+    \eachpageornament
+    \begin{itemize}
+        \item Visualizes data in matrix format.
+        \item Useful for highlighting correlations.
+    \end{itemize}
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            colormap name=viridis,
+            colorbar,
+            width=0.8\textwidth,
+            height=0.5\textwidth,
+            mesh/cols=3  % Specify the number of columns
+            ]
+            % Ensure there are at least 2 rows and 2 columns for the matrix plot
+            \addplot [matrix plot*,point meta=explicit] coordinates {
+                (1,1) [2] (1,2) [3] (1,3) [1]
+                (2,1) [4] (2,2) [5] (2,3) [3]
+                (3,1) [1] (3,2) [2] (3,3) [4]
+            };
+        \end{axis}
+    \end{tikzpicture}
+\end{frame}
+
+% Thank You Slide
+\begin{frame}{Thank You}
+    \eachpageornament
+    \centering
+    \Huge{Thank You!}
+\end{frame}
+
+\end{document}

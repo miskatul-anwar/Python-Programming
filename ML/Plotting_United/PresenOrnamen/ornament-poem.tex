@@ -1,0 +1,29 @@
+\begin{tikzpicture}[every node/.style={inner sep=0pt}]
+    \node[text width=8cm,align=center](Text){%
+        \vspace{48pt}
+        \huge\textit{Miskatul Anwar}\\
+        \small September 11, 2024
+        \vspace{24pt}
+        \begin{tcolorbox}[colback=red!5,colframe=red!65!black,title=Comming Up...]
+            \begin{itemize}
+                \item Data Visualization
+                \item Popular Tools
+                \item Different Types
+                \item Conclusion
+            \end{itemize}
+        \end{tcolorbox}
+        \vspace{96pt}
+    } ;
+    \node[shift={(-1cm,1cm)},anchor=north west](CNW)  at (Text.north west)
+    {\pgfornament[width=2cm]{61}};
+    \node[shift={(1cm,1cm)},anchor=north east](CNE)   at (Text.north east)
+    {\pgfornament[width=2cm,symmetry=v]{61}};
+    \node[shift={(-1cm,-1cm)},anchor=south west](CSW) at (Text.south west)
+    {\pgfornament[width=2cm,symmetry=h]{61}};
+    \node[shift={(1cm,-1cm)},anchor=south east](CSE)  at (Text.south east)
+    {\pgfornament[width=2cm,symmetry=c]{61}};
+    \pgfornamenthline{CNW}{CNE}{north}{87}
+    \pgfornamenthline{CSW}{CSE}{south}{87}
+    \pgfornamentvline{CNW}{CSW}{west}{87}
+    \pgfornamentvline{CNE}{CSE}{east}{87}
+\end{tikzpicture}
