@@ -17,6 +17,12 @@ from manim.utils.color.XKCD import (
 )
 from manim.utils.unit import Percent
 
+config.background_color = BLACK
+config.frame_width = 16
+config.frame_height = 9
+config.pixel_width = 1920
+config.pixel_height = 1080
+
 
 class Crit(Scene):
     def construct(self):
