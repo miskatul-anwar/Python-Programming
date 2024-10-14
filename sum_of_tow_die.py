@@ -7,7 +7,7 @@ TARGET_SUM = 7
 
 def main():
     n_events = 0
-    for i in tqdm(range(N_TRIALS)):
+    for _ in tqdm(range(N_TRIALS)):
         dice_total = run_experiment()
         if dice_total == TARGET_SUM:
             n_events += 1

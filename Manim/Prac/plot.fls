@@ -1,5 +1,0 @@
-PWD /home/miskat/CS/Python-Programming/Manim/Prac
-INPUT /usr/share/texmf-dist/web2c/texmf.cnf
-INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT plot.py
-OUTPUT plot.log
