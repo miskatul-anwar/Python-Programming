@@ -7,5 +7,4 @@ def main():
     num2 = float(input("Enter second number: "))
     print("The avarage is: ", avarage(num1, num2))
 
-
 main()

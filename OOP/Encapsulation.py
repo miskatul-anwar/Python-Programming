@@ -5,7 +5,7 @@ class SimpleClass:
     def dev(self, x: int, y: int) -> float:
         try:
             return x / y
-        except ZeroDivisionErro:
+        except ZeroDivisionError:
             print("zero div error")
         finally:
             print("Handled !")
@@ -14,7 +14,6 @@ class SimpleClass:
 def main():
     foo = SimpleClass()
     print(foo.dev(5, 0))
-
 
 if __name__ == "__main__":
     main()

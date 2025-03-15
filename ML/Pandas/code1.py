@@ -27,4 +27,5 @@ def main():
         input_system(nm)
 
 
-main()
+if __name__ == '__main__':
+    main()
